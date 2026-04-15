@@ -1,28 +1,28 @@
 #include <stdio.h>
 
 int main() {
-    int answer;
-    int number;
+    int answer, input;
     int count = 0;
 
     scanf("%d", &answer);
 
     do {
-        scanf("%d", &number);
+        scanf("%d", &input);
         count++;
 
-        if (number > answer) {
-            printf("%d?> %d 보다 낮습니다\n", number, number);
+        if (input > answer) {
+            printf("%d?> %d 보다 낮습니다\n", input, input);
         }
-        else if (number < answer) {
-            printf("%d<? %d 보다 높습니다\n", number, number);
+        else if (input < answer) {
+            printf("%d<? %d 보다 높습니다\n", input, input);
         }
         else {
-            printf("%d==? %d 정답입니다\n", number, number);
-            printf("%d -> 시도횟수는 %d회\n", answer, count);
+            printf("%d==? %d 정답입니다\n", input, input);
         }
 
-    } while (number != answer);
+    } while (input != answer);
+
+    printf("%d > 시도횟수는 %d회\n", answer, count);
 
     return 0;
 }
