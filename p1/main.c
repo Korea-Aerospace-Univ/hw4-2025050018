@@ -19,11 +19,10 @@ int main() {
         }
         else {
             printf("%d==?\n", number);
-            printf("%d\n", answer);
-            printf("%d\n", count);
         }
 
     } while (number != answer);
-
+    printf("%d\n", count);
+      
     return 0;
 }
