@@ -19,7 +19,8 @@ int main() {
         }
         else {
             printf("%d==?\n", number);
-            printf("%d\n%d", answer, count);
+            printf("%d\n", answer);
+            printf("%d\n", count);
         }
 
     } while (number != answer);
